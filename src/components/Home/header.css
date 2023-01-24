@@ -1,0 +1,25 @@
+.header {
+    background-color: #21D4FD;
+    background: linear-gradient(60deg, rgba(58,146,180,1) 26%, rgba(50,203,11,1) 60%, rgba(255,255,255,1) 62%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    min-height: 400px;
+    border-bottom: 1px solid #ddd;
+}
+.animate {
+    animation: MoveUpDown 5s linear infinite;
+    transition: 5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+  }
